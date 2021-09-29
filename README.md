@@ -1,2 +1,2 @@
 # responsive-nav
-A simple lightweight, customizable responsive navigationbar using flexbox. 
+A simple lightweight, customizable responsive navigationbar with hamburger using flexbox. 
