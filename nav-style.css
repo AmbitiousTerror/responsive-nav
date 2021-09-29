@@ -1,0 +1,98 @@
+/*Global reset & sizes*/
+:root{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.website-container{
+    margin: 0 auto;
+}
+/*Change max-width to increase max width of navbar*/
+.navbar-container{
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
+}
+nav{
+    width: 100%;
+    background-color: #2f2d2d;
+    height: 80px;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #d5cece;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.liItems{
+    font-size: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+    color: #d5cece;
+    text-decoration: none;
+}
+a.hamburger{
+    display: none;
+    border: none;
+    transition: none;
+    padding-bottom: 0;
+}
+.navbar ul li.hamburger a img{
+    color: #d5cece;
+}
+.navbar ul li a:hover{
+    border-bottom: 3px #d5cece solid;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+/*Change 768px below to change size the browser size at which the responsive menu will kick in.*/
+@media only screen and (max-width: 768px) {
+
+    .list{
+        display: none;
+    }
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-container{
+        position: relative;
+        justify-content: center;
+    }
+    a.hamburger {
+        display: block;
+        padding-right: 20px;
+        border: none;
+        transition: none;
+        padding-bottom: 0;
+        position: absolute;
+        top: 28px;
+        right: 0;
+    }
+   .logo{
+       top: 23px;
+       left: 20px;
+       position: absolute;
+   }
+   /*Change the size below to increase/decrease size of dropdown in tablet menu*/
+   nav.nav-menu-size{
+       height: 300px;
+   }
+
+}
